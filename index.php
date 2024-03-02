@@ -12,43 +12,40 @@ Olimpia Milano - Cantù | 55-60*/
 
 $teams = [
     [
-        "home_squad" => "Home team 1",
-        "guest_squad" => "Guest team 1",
+        "home_squad" => "Olimpia Milano",
+        "guest_squad" => "V.L. Pesaro",
         "home_points"=> rand(1,50),
         "guest_points" => rand(1,20),
     ],
     [
-        "home_squad" => "Home team 2",
-        "guest_squad" => "Guest team 2",
-        "home_points"=> rand(1,50),
-        "guest_points" => rand(1,20),
-    ],
-    
-    [
-        "home_squad" => "Home team 3",
-        "guest_squad" => "Guest team 3",
+        "home_squad" => "Fortitudo Bologna",
+        "guest_squad" => "Juvecaserta",
         "home_points"=> rand(1,50),
         "guest_points" => rand(1,20),
     ],
     
     [
-        "home_squad" => "Home team 4",
-        "guest_squad" => "Guest team 4",
+        "home_squad" => "Auxilium Torino",
+        "guest_squad" => "Dinamo Sassari",
         "home_points"=> rand(1,50),
         "guest_points" => rand(1,20),
     ],
     
     [
-        "home_squad" => "Home team 5",
-        "guest_squad" => "Guest team 5",
+        "home_squad" => "Teramo Basket",
+        "guest_squad" => "Brescia",
+        "home_points"=> rand(1,50),
+        "guest_points" => rand(1,20),
+    ],
+    
+    [
+        "home_squad" => "Junior Casale",
+        "guest_squad" => "Stamura Ancona",
         "home_points"=> rand(1,50),
         "guest_points" => rand(1,20),
     ],
 ];
 
-foreach ($teams as $team) {
-    var_dump($team);
-}
 
 ?>
 
@@ -65,7 +62,15 @@ foreach ($teams as $team) {
         <link rel="stylesheet" href="">
     </head>
     <body>
-<h1>test</h1>
+<h1>PARTITE</h1>
+
+<?php
+foreach ($teams as $team) {
+    //var_dump($team);
+    echo $team['home_squad'] . " - " . $team['guest_squad'] . " | " . $team['home_points'] . " - " . $team['guest_points'] . "<br>";
+}
+
+?>
         
         <script src="" async defer></script>
     </body>
